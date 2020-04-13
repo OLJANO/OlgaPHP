@@ -1,0 +1,230 @@
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header{
+    margin-bottom: 4rem;
+}
+main{
+    /*Основной раздел будет занимать все свободное место на странице*/
+    flex: 1 0 auto;
+}
+
+h1, h2, h4, h6 {
+    font-weight: 500;
+    color: #2F4F4F;/*rgba (47, 79, 79, 0.1);*/
+    text-align: center;   
+}
+img{
+    /*Растягиваем картинку на всю ширину родительского контейнера*/
+    display: block;
+    max-width: 100%;
+    max-height: auto;
+    width: 100%;
+    height: auto;
+}
+hr {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 15px 12px -11px rgba(0,0,0,0.15);
+}
+.img-thumbnail {
+    margin-top: 1rem;
+}
+.shadow{
+    /* Параметры тени */
+    box-shadow: 1px 1px 1px #000; 
+}
+.navbar {
+    background: #ececf6;/*#c8cbcf;#e6e6fa;#dcdcdc;#b9bbbe;#ced4da;*/
+    opacity: .8;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+.navbar-brand {
+    /*Увеличиваем размер шрифта у логотипа*/
+    font-family: Old English Text MT; 
+    font-size: 1.75rem;
+    color: #C0C0C0/*rgba (89, 107, 108, 0.5)*/;
+    padding-left: 2.5rem;
+}
+.navbar .nav-item .nav-link {
+    text-align: right; 
+    text-transform: uppercase;
+    color: #C0C0C0;/*#6c757d;*/
+    padding-right: 3.5rem;
+}
+.nav-link {
+    margin-top: 1rem;   
+}
+.navbar-toggler {
+    margin: 0.5rem 3.5rem 0 2.75rem; 
+}
+
+.nav-tabs {
+    /*margin-left: 4.5rem;
+   margin-top: 1.6rem;*/
+    margin: 1.6rem;
+}
+.carousel-caption {
+    position: absolute;
+    margin: 0 1.5rem 10rem 1.5rem;
+    /* right: 75%; left: 9%;*/
+    top: 5%;
+    z-index: 10;
+    background: rgba(255,255,255,.5);
+    border-radius: .5rem;
+}
+/*.carousel-caption .carousel-text-wrapp {
+    padding: 1rem;
+  background: rgba(255,255,255,.5);
+border-radius: .5rem;
+}*/
+.carousel-text-wrapp p {
+    padding: 1rem;
+    font-size: 1.125rem; 
+    color: darkslategrey;
+    font-weight: 700;
+    padding: 0;
+}
+
+/* =============== About ============== 
+.about h1{
+    font-size: 3rem;
+    font-weight: 300;
+    color: #C0C0C0;
+}
+.about h2{
+    margin-top: 2rem;
+}
+.about img{
+    transition: ease .5s;
+}
+.about img:hover{
+    filter: grayscale(1);
+}*/
+
+/* =============== Works ============== 
+.works .nav-tabs {
+     border-bottom: none; 
+}
+.works .nav-tabs .nav-link {
+     border: none; 
+    /* border-top-left-radius: 0.25rem; */
+/* border-top-right-radius: 0.25rem; 
+}*/
+/*.works .tab-content h2{
+    margin: 2rem 0;
+}*/
+.tab-pane-item{
+    position: relative;
+    margin-bottom: 2rem;
+}
+.img-desc{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.25rem;
+    position: absolute;
+    /*top:50%;*/
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: rgba(0, 123, 255, 0.7);
+    /*background: #007bff;*/
+    text-align: center;
+    font-size: 1.125rem;
+    color: #fff;
+    transition: ease-in .5s;
+    opacity: 0;
+}
+.tab-pane-item img{
+    transition: ease-in .5s;
+}
+.tab-pane-item:hover .img-desc{
+    /*visibility: visible;*/
+    /*display: block;*/
+    opacity: 1; 
+}
+.tab-pane-item:hover img{
+    /*visibility: visible;*/
+    filter: grayscale(1);
+    opacity: .8; 
+}
+/*.works-items{
+    display: flex;
+    flex-wrap: wrap;
+}*/
+/*При наведении мышкой фото увеличивается*/
+.hovergallery img{
+    -webkit-transform:scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
+    -moz-transform:scale(0.8); /*Mozilla: масштабирование*/
+    -o-transform:scale(0.8); /*Opera: масштабирование*/
+    -webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+    -moz-transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+    -o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+    opacity: 0.7; /*Начальная прозрачность изображений*/
+    margin: 0 10px 5px 0; /*Интервалы между изображениями*/
+}
+.hovergallery img:hover{
+    -webkit-transform:scale(1.1); /*Webkit: увеличиваем размер до 1.2x*/
+    -moz-transform:scale(1.1); /*Mozilla: масштабирование*/
+    -o-transform:scale(1.1); /*Opera: масштабирование*/
+    box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+    -webkit-box-shadow:0px 0px 30px gray; /*Webkit: тени*/
+    -moz-box-shadow:0px 0px 30px gray; /*Mozilla: тени*/
+    opacity: 1;
+}
+/* =============== Contacts ==============*/ 
+.contacts .fa{
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    color: #17a2b8;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+.section {
+    margin: 3rem 0;
+}
+shadow {
+    box-shadow: 1px 1px 1px 1px #000;/*Параметры тени*/
+}
+/*header {
+    border-bottom: #ccc solid;
+}*/
+footer{
+    /*Футер будет занимать столько места по вертикали, сколько и должен и не пикселя больше */
+    flex: 0 0 auto;
+    border-top: #b9bbbe solid;
+    border-bottom: #b9bbbe solid;
+    margin-top: 0;
+    padding: 1.5rem 0rem;
+    color: #2F4F4F; 
+}
+.row {
+    margin: 2rem;
+}
+.container-fluid {
+    margin: 0;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        margin: 2rem 0;
+    }
+}
+@media screen and (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    
+}

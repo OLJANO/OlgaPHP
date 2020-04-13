@@ -1,0 +1,440 @@
+<!--<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Контакты</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+<!--Header-->
+<!--<header>
+    <nav class="navbar fixed-top navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="about.html">Baltic Enerpred</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Галерея</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>     
+</header>
+<div class="img-thumbnail">
+    <img src="image/sastavka_4_4.jpg" alt="фото">
+</div>
+<!--<header>
+    Main-->
+<!--<main>
+    <section class="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Наши контакты</h1>
+                </div>
+            </div>
+<!-- Content Row -->
+<!--<div class="row">
+<!-- Map Column -->
+<!--<div class="col-lg-8 mb-4">
+<!-- Embedded Google Map -->
+<!--<iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d2031.3946944464903!2d27.777589728733954!3d59.393127206443744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d59.393201!2d27.774167199999997!4m5!1s0x0%3A0x25eb5593291184b6!2sBaltic+Enerpred+O%C3%9C!3m2!1d59.392204!2d27.781611899999998!5e0!3m2!1sru!2see!4v1557347593998!5m2!1sru!2see"></iframe>
+</div>
+<!-- Contact Details Column -->
+<!--<div class="col-lg-4 mb-4">
+<!--<h3>Контактные данные</h3>-->
+<!--<br>
+<p><span class="fa fa-map-marker"></span>
+    б. Виру 20 &ensp; 40233<br/>
+    &emsp; &ensp; Силламяэ Эстония</p>
+<p>
+    <span class="fa fa-map-marker"></span>
+    ул. Ак. Павлова 2<br/>
+    &emsp;&emsp; 40232 Силламяэ Эстония</p>
+<p>
+    <span class="fa fa-phone"></span> (+372) 52-42-458	
+</p>
+
+<p> 
+    <span class="fa fa-envelope-o"></span>
+    <a href="mailto:varuosad@gmail.com">varuosad@gmail.com</a>
+    <br/></p>
+
+
+<p><span class="fa fa-facebook"></span>
+    &ensp;<a href="https://www.facebook.com/RDMSIL" target="_blank">facebook.com/RDMSIL</a>
+
+</p> 
+<p><span class="fa fa-clock-o"></span>  
+    &ensp;Пон - Суб:  9:00 - 18:00</p> 
+
+
+
+</div>
+</div>-->
+<!-- Contact Form --><!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+<!--<div class="row">
+    <div class="col-lg-8 mb-4">
+        <h3>Отправьте нам сообщение</h3>
+        <form name="sentMessage" id="contactForm" novalidate>
+            <div class="control-group form-group">
+                <div class="controls">
+                    <label>Имя</label>
+                    <input type="text" class="form-control" id="name" required data-validation-required-message="Введите, пожалуйста, Ваше имя" pattern="[a-zA-Za-яА-Я]" minlength="2" maxlength="50" placeholder="Имя">
+
+
+<!--<p class="help-block"></p>-->
+<!--</div>
+</div>
+<div class="control-group form-group">
+<div class="controls">
+    <label>Номер телефона</label>
+    <input type="tel" class="form-control" id="phone" required data-validation-required-message="Введите, пожалуйста, Ваш номер телефона.
+           Example: +3724567890(1)" pattern="[\+372]{4}\d{7,8}" placeholder="Номер телефона">
+</div>
+</div>
+<div class="control-group form-group">
+<div class="controls">
+    <label>Email</label>
+    <input type="email" class="form-control" id="email" required data-validation-required-message="Введите, пожалуйста, свой e-mail">
+</div>
+<div class="control-group form-group">
+    <div class="controls">
+        <label>Сообщение</label>
+        <textarea rows="2" cols="100" class="form-control" id="message" required data-validation-required-message="Пожалуйста, напишите сообщение" minlength="5" maxlength="999" style="resize:none"></textarea>
+    </div>
+</div>
+<div id="success"></div>
+<!-- For success/fail messages--> 
+<!--<button type="submit" class="btn btn-outline-secondary" id="sendMessageButton">Отправить сообщение</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<div class="row">
+
+<div class="col-12 col-md-6 col-lg-4">
+<h5>Контакты</h5>                
+<span class="fa fa-map-marker"></span>
+&ensp; ул. Ак. Павлова Силламяэ<br/>
+&emsp;&ensp;  Эстония 240232<br/>
+<span class="fa fa-phone"></span>
+&ensp; (+372) 52-42-458<br/>	
+<span class="fa fa-envelope-o"></span>
+&ensp; <a href="mailto:varuosad@gmail.com">varuosad@gmail.com</a><br/>
+<span class="fa fa-facebook"></span>
+&ensp; <a href="https://www.facebook.com/RDMSIL">facebook.com/RDMSIL</a>
+</div> 
+<div class="col-12 col-md-6 col-lg-3">
+<h5>Меню</h5>
+<a href="index.html">Главная</a><br/>
+<a href="about.html">О нас</a><br/>
+<a href="gallery.html">Галерея</a><br/>
+<a href="contact.html">Контакты</a>           
+</div>        
+<div class="col-12 col-md-6 col-lg-5">
+<h5>Полезные ссылки</h5>   
+<a href="gallery.html">Наши услуги</a>           
+<br/>
+<a href="gallery.html#baguette">Багет</a>           
+<br/>
+<a href="gallery.html#clock">Часы с фото</a><br/>
+<a href="gallery.html#cup">Кружки</a><br/> 
+<a href="gallery.html#paspartu">Паспарту</a>
+</div>
+</div>
+</div> 
+</footer>
+<div class="container-fluid">
+<p>Copyrigth &COPY; 2019 Baltic Enerpred</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+</body>
+</html>-->
+<?php
+include 'php/form-validation.php';
+?>
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Контакты</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+            <nav class="navbar fixed-top navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="about.html">Baltic Enerpred</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Галерея</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>     
+        </header>
+        <div class="img-thumbnail">
+            <img src="image/sastavka_4_4.jpg" alt="фото">
+        </div>
+        <!--<header>
+            Main-->
+        <main>
+            <section class="contacts">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>Kонтакты</h1>
+                        </div>
+                    </div>
+                    <!-- Content Row -->
+                    <div class="row">
+                        <!-- Map Column -->
+                        <div class="col-lg-12 mb-4">
+                            <!-- Embedded Google Map -->
+                            <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d2031.3946944464903!2d27.777589728733954!3d59.393127206443744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d59.393201!2d27.774167199999997!4m5!1s0x0%3A0x25eb5593291184b6!2sBaltic+Enerpred+O%C3%9C!3m2!1d59.392204!2d27.781611899999998!5e0!3m2!1sru!2see!4v1557347593998!5m2!1sru!2see"></iframe>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Contact Details Column -->
+                        <div class="col-lg-5 mb-4">
+                            <h3>Контактные данные</h3>
+                            <br>
+                            <p><span class="fa fa-map-marker"></span>
+                                б. Виру 20 &ensp; 40233<br/>
+                                &emsp; &ensp; Силламяэ Эстония</p>
+                            <p>
+                                <span class="fa fa-map-marker"></span>
+                                ул. Ак. Павлова 2<br/>
+                                &emsp;&emsp; 40232 Силламяэ Эстония</p>
+                            <p>
+                                <span class="fa fa-phone"></span> (+372) 52-42-458	
+                            </p>
+                            <p> 
+                                <span class="fa fa-envelope-o"></span>
+                                <a href="mailto:varuosad@gmail.com">varuosad@gmail.com</a>
+                                <br/></p>
+                            <p><span class="fa fa-facebook"></span>
+                                &ensp;<a href="https://www.facebook.com/RDMSIL" target="_blank">facebook.com/RDMSIL</a>
+                            </p> 
+                            <p><span class="fa fa-clock-o"></span>  
+                                &ensp;Пон - Суб:  9:00 - 18:00</p>
+                        </div>
+                        <div class="col-lg-7 mb-4">
+                            <h3>Отправьте нам сообщение</h3>
+                            <!--<?php 
+                            if($info !=''){
+                            echo "<p class='alert alert-success'>TTTT</p>";
+                            }
+                            ?>-->
+                            <form class="needs-validation" novalidate method="post" action="#">
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom01">Имя</label>
+                                        <input type="text" name="name" class="form-control" id="validationCustom01" placeholder="Имя" required>
+                                        <div class="invalid-feedback">
+                                            Введите, пожалуйста, Ваше имя
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom02">Номер телефона</label>
+                                        <input type="tel" name="tel" class="form-control" id="validationCustom02" placeholder="Номер телефона" required>
+                                        <div class="invalid-feedback">
+                                            Введите, пожалуйста, Ваш номер телефона.
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustomUsername">Email</label>
+                                        <input type="email" name="email" class="form-control" id="validationCustomUsername" placeholder="Email" aria-describedby="inputGroupPrepend" required>
+                                        <div class="invalid-feedback">
+                                            Введите, пожалуйста, свой e-mail
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-3">
+                                        <label for="validationCustom03">Напишите</label>
+                                        <label for="exampleFormControlTextarea1">сообщение</label>
+                                        <textarea name="msg" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+
+                                        <div class="invalid-feedback">
+                                            Напишите, пожалуйста, сообщение
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--                                <div class="form-group">
+                                                                    <div class="form-check">
+                                                                        <input name="check" class="form-check-input" type="checkbox" value="yes" id="invalidCheck" required>
+                                                                        <label class="form-check-label" for="invalidCheck">
+                                                                            Agree to terms and conditions
+                                                                        </label>
+                                                                        <div class="invalid-feedback">
+                                                                            You must agree before submitting.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>-->
+                                <button  class="btn btn-outline-secondary" type="submit">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <h5>Контакты</h5>                
+                        <span class="fa fa-map-marker"></span>
+                        &ensp; ул. Ак. Павлова Силламяэ<br/>
+                        &emsp;&ensp;  Эстония 240232<br/>
+                        <span class="fa fa-phone"></span>
+                        &ensp; (+372) 52-42-458<br/>	
+                        <span class="fa fa-envelope-o"></span>
+                        &ensp; <a href="mailto:varuosad@gmail.com">varuosad@gmail.com</a><br/>
+                        <span class="fa fa-facebook"></span>
+                        &ensp; <a href="https://www.facebook.com/RDMSIL">facebook.com/RDMSIL</a>
+                    </div> 
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h5>Меню</h5>
+                        <a href="index.html">Главная</a><br/>
+                        <a href="about.html">О нас</a><br/>
+                        <a href="gallery.html">Галерея</a><br/>
+                        <a href="contact.html">Контакты</a>           
+                    </div>        
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <h5>Полезные ссылки</h5>   
+                        <a href="gallery.html">Наши услуги</a>           
+                        <br/>
+                        <a href="gallery.html#baguette">Багет</a>           
+                        <br/>
+                        <a href="gallery.html#clock">Часы с фото</a><br/>
+                        <a href="gallery.html#cup">Кружки</a><br/> 
+                        <a href="gallery.html#paspartu">Паспарту</a>
+                    </div>
+                </div>
+            </div> 
+        </footer>
+        <div class="container-fluid">
+            <p>Copyrigth &COPY; 2019 Baltic Enerpred</p>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        <script src="js/jqBootstrapValidation.js"></script>
+        <!--<script src="js/contact_me.js"></script>-->
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+        </script>
+    </body>
+</html>                                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
